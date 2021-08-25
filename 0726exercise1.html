@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <script>
+        //parseFloat for decimal
+        alert(`Welcome to my online calculator please input valid value! 😊`);
+        var operator = prompt(`Enter operator ( *, /, + or - ): `); //MDAS
+        const Num1 = parseFloat(prompt(`Enter the first number: `));
+        const Num2 = parseFloat(prompt(`Enter the second number: `));
+        let answer;
+        //multiplication
+        if (operator == '*') {
+            answer = Num1 * Num2;
+        //Division
+        } else if (operator == `/`) {
+            answer = Num1 / Num2;
+        //Addition
+        } else if (operator == `+`) {
+            answer = Num1 + Num2;
+        //Subtraction
+        } else {
+            answer = Num1 - Num2;
+        }
+        alert(` Answer is ` + answer);
+        document.write(" Answer is " + answer);
+    </script>
+
+    <body>
+
+</html>
+</body>
+
+</html>
